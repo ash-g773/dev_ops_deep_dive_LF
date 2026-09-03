@@ -64,7 +64,7 @@ Introduction to containers and container orchestration.
 
 Bring the technologies together into a working DevOps workflow.
 
-**Focus:** Git → Jenkins → Docker → Registry → Kubernetes
+**Focus:** Git → Jenkins → Docker → Registry → Provisioning 
 
 > This exercise will be completed **without Terraform**, focusing on the application delivery workflow.
 
