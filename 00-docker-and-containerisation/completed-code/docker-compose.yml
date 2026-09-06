@@ -1,0 +1,23 @@
+version: '3.9'
+services:
+  countries-mvc:
+    image: emilesherrott/countries-mvc:0.0.1.RELEASE
+    ports:
+      - "3000:3000"
+    restart: always
+    depends_on:
+      - countries-db
+    networks:
+      - countries-network
+
+  # The value of 'DB_HOST' we reference in the MVC Dockerfile  
+  countries-db:
+    image: emilesherrott/countries-db:0.0.1.RELEASE
+    ports:
+      - "5432:5432"
+    restart: always
+    networks:
+      - countries-network
+      
+networks:
+  countries-network:
